@@ -1,6 +1,7 @@
 from os.path import join
 import sys
 import numpy as np
+from multiprocessing.pool import Pool
 
 
 def load_data(load_dir, bid):
@@ -10,7 +11,7 @@ def load_data(load_dir, bid):
     interior_mask = np.load(join(load_dir, f"{bid}_interior.npy"))
     return u, interior_mask
 
-#@profile
+
 def jacobi(u, interior_mask, max_iter, atol=1e-6):
     u = np.copy(u)
 
@@ -39,6 +40,12 @@ def summary_stats(u, interior_mask):
         'pct_below_15': pct_below_15,
     }
 
+# This function is called by each worker in the pool to process a single floor plan
+def process_floorplan(args):
+    u0, interior_mask, max_iter, atol = args
+    u = jacobi(u0, interior_mask, max_iter, atol)
+    return u
+
 
 if __name__ == '__main__':
     # Load data
@@ -48,8 +55,10 @@ if __name__ == '__main__':
 
     if len(sys.argv) < 2:
         N = 1
+        num_workers = 1
     else:
         N = int(sys.argv[1])
+        num_workers = int(sys.argv[2])
     building_ids = building_ids[:N]
 
     # Load floor plans
@@ -60,14 +69,14 @@ if __name__ == '__main__':
         all_u0[i] = u0
         all_interior_mask[i] = interior_mask
 
-    # Run jacobi iterations for each floor plan
+    # Run jacobi iterations for each floor plan in parallel
     MAX_ITER = 20_000
     ABS_TOL = 1e-4
 
-    all_u = np.empty_like(all_u0)
-    for i, (u0, interior_mask) in enumerate(zip(all_u0, all_interior_mask)):
-        u = jacobi(u0, interior_mask, MAX_ITER, ABS_TOL)
-        all_u[i] = u
+    # Use multiprocessing to parallelize the computation
+    with Pool(processes=num_workers) as pool:
+        args = [(all_u0[i], all_interior_mask[i], MAX_ITER, ABS_TOL) for i in range(N)]
+        all_u = pool.map(process_floorplan, args)
 
     # Print summary statistics in CSV format
     stat_keys = ['mean_temp', 'std_temp', 'pct_above_18', 'pct_below_15']
