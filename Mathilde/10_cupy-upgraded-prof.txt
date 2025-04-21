@@ -1,0 +1,155 @@
+Generating SQLite file 10_cupy-upgraded-prof.sqlite from 10_cupy-upgraded-prof.nsys-rep
+Exporting 228794 events: [1%                                                   Exporting 228794 events: [2%                                                   Exporting 228794 events: [3%                                                   Exporting 228794 events: [4%                                                   Exporting 228794 events: [5%                                                   Exporting 228794 events: [=6%                                                  Exporting 228794 events: [=7%                                                  Exporting 228794 events: [==8%                                                 Exporting 228794 events: [==9%                                                 Exporting 228794 events: [==10%                                                Exporting 228794 events: [==11%                                                Exporting 228794 events: [===12%                                               Exporting 228794 events: [===13%                                               Exporting 228794 events: [====14%                                              Exporting 228794 events: [====15%                                              Exporting 228794 events: [=====16%                                             Exporting 228794 events: [======17%                                            Exporting 228794 events: [======18%                                            Exporting 228794 events: [=======19%                                           Exporting 228794 events: [=======20%                                           Exporting 228794 events: [========21%                                          Exporting 228794 events: [========22%                                          Exporting 228794 events: [=========23%                                         Exporting 228794 events: [=========24%                                         Exporting 228794 events: [==========25%                                        Exporting 228794 events: [==========26%                                        Exporting 228794 events: [===========27%                                       Exporting 228794 events: [===========28%                                       Exporting 228794 events: [============29%                                      Exporting 228794 events: [============30%                                      Exporting 228794 events: [=============31%                                     Exporting 228794 events: [=============32%                                     Exporting 228794 events: [==============33%                                    Exporting 228794 events: [===============34%                                   Exporting 228794 events: [===============35%                                   Exporting 228794 events: [================36%                                  Exporting 228794 events: [================37%                                  Exporting 228794 events: [=================38%                                 Exporting 228794 events: [=================39%                                 Exporting 228794 events: [==================40%                                Exporting 228794 events: [==================41%                                Exporting 228794 events: [===================42%                               Exporting 228794 events: [===================43%                               Exporting 228794 events: [====================44%                              Exporting 228794 events: [====================45%                              Exporting 228794 events: [=====================46%                             Exporting 228794 events: [=====================47%                             Exporting 228794 events: [======================48%                            Exporting 228794 events: [======================49%                            Exporting 228794 events: [=======================50%                           Exporting 228794 events: [========================51%                          Exporting 228794 events: [========================52%                          Exporting 228794 events: [=========================53%                         Exporting 228794 events: [=========================54%                         Exporting 228794 events: [==========================55%                        Exporting 228794 events: [==========================56%                        Exporting 228794 events: [===========================57%                       Exporting 228794 events: [===========================58%                       Exporting 228794 events: [============================59%                      Exporting 228794 events: [============================60%                      Exporting 228794 events: [=============================61%                     Exporting 228794 events: [=============================62%                     Exporting 228794 events: [==============================63%                    Exporting 228794 events: [==============================64%                    Exporting 228794 events: [===============================65%                   Exporting 228794 events: [===============================66%                   Exporting 228794 events: [================================67%                  Exporting 228794 events: [=================================68%                 Exporting 228794 events: [=================================69%                 Exporting 228794 events: [==================================70%                Exporting 228794 events: [==================================71%                Exporting 228794 events: [===================================72%               Exporting 228794 events: [===================================73%               Exporting 228794 events: [====================================74%              Exporting 228794 events: [====================================75%              Exporting 228794 events: [=====================================76%             Exporting 228794 events: [=====================================77%             Exporting 228794 events: [======================================78%            Exporting 228794 events: [======================================79%            Exporting 228794 events: [=======================================80%           Exporting 228794 events: [=======================================81%           Exporting 228794 events: [========================================82%          Exporting 228794 events: [========================================83%          Exporting 228794 events: [=========================================84%         Exporting 228794 events: [==========================================85%        Exporting 228794 events: [==========================================86%        Exporting 228794 events: [===========================================87%       Exporting 228794 events: [===========================================88%       Exporting 228794 events: [============================================89%      Exporting 228794 events: [============================================90%      Exporting 228794 events: [=============================================91%     Exporting 228794 events: [=============================================92%     Exporting 228794 events: [==============================================93%    Exporting 228794 events: [==============================================94%    Exporting 228794 events: [===============================================95%   Exporting 228794 events: [===============================================96%   Exporting 228794 events: [================================================97%  Exporting 228794 events: [================================================98%  Exporting 228794 events: [=================================================99% Exporting 228794 events: [=================================================100%]
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/nvtxsum.py]... 
+SKIPPED: 10_cupy-upgraded-prof.sqlite does not contain NV Tools Extension (NVTX) data.
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/osrtsum.py]... 
+
+ ** OS Runtime Summary (osrtsum):
+
+ Time (%)  Total Time (ns)  Num Calls   Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)           Name         
+ --------  ---------------  ---------  -----------  -----------  --------  ----------  -----------  ----------------------
+     49.1       8327620348         98   84975717.8  100165300.0      1217   165011661   35626035.6  poll                  
+     48.3       8201311464         10  820131146.4  728548086.0  19230912  1593966777  453764091.0  sem_wait              
+      1.3        225100292        646     348452.5      14541.5      1001    34448094    1552602.3  ioctl                 
+      1.1        190579463        857     222379.8     213832.0      2090      673255      82841.8  open64                
+      0.1         11003647        826      13321.6       4687.5      1027      370891      26558.8  read                  
+      0.0          3285456        329       9986.2       1742.0      1397     1757229      97322.1  mmap64                
+      0.0          2145010          5     429002.0     111739.0      9292     1870891     808150.9  fread                 
+      0.0          1370683        952       1439.8       1063.0      1005      187066       6761.0  fclose                
+      0.0          1317664         39      33786.3       4568.0      2357      497360      91606.7  fopen                 
+      0.0          1141937        278       4107.7       2683.0      2466      184082      10986.7  munmap                
+      0.0          1035896          4     258974.0     258572.0     57795      460957     227472.6  pthread_create        
+      0.0           852376        208       4098.0       1504.5      1238       46741       5714.7  fgets                 
+      0.0           548048          8      68506.0       3800.5      2440      336349     125309.4  fopen64               
+      0.0           525778         10      52577.8      65343.5     19080       89003      27991.5  sem_timedwait         
+      0.0           297002         18      16500.1      13484.0      2772       76717      16884.1  mmap                  
+      0.0           101581          1     101581.0     101581.0    101581      101581          0.0  pthread_cond_wait     
+      0.0            70709         13       5439.2       5668.0      1183        9442       1958.7  pthread_cond_signal   
+      0.0            46867         12       3905.6       3776.5      1982       10283       2233.8  write                 
+      0.0            43551          6       7258.5       7361.5      2688       12402       4061.8  pipe2                 
+      0.0            36999          1      36999.0      36999.0     36999       36999          0.0  waitpid               
+      0.0            29807          6       4967.8       3159.0      1149       13523       4863.5  fputs                 
+      0.0            29783          6       4963.8       4973.5      1499        7832       2446.3  open                  
+      0.0            20845          2      10422.5      10422.5     10266       10579        221.3  socket                
+      0.0            11062          8       1382.8       1279.0      1010        2381        444.4  fcntl                 
+      0.0            10491          1      10491.0      10491.0     10491       10491          0.0  connect               
+      0.0             8389          3       2796.3       2116.0      1900        4373       1369.7  signal                
+      0.0             5288          2       2644.0       2644.0      2518        2770        178.2  pthread_cond_broadcast
+      0.0             5226          3       1742.0       1776.0      1194        2256        531.8  sigaction             
+      0.0             4296          2       2148.0       2148.0      1657        2639        694.4  fwrite                
+      0.0             2459          2       1229.5       1229.5      1150        1309        112.4  pthread_mutex_trylock 
+      0.0             2178          1       2178.0       2178.0      2178        2178          0.0  bind                  
+      0.0             1928          1       1928.0       1928.0      1928        1928          0.0  dup2                  
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/cudaapisum.py]... 
+
+ ** CUDA API Summary (cudaapisum):
+
+ Time (%)  Total Time (ns)  Num Calls   Avg (ns)   Med (ns)   Min (ns)  Max (ns)   StdDev (ns)              Name            
+ --------  ---------------  ---------  ----------  ---------  --------  ---------  -----------  ----------------------------
+     83.1       4182836680      14416    290152.4   204377.0     15012    3331042     387422.6  cudaMemcpyAsync             
+      9.7        489058988      68457      7144.0     6992.0      4882      61578       1513.1  cuLaunchKernel              
+      4.9        247738115          6  41289685.8   141520.0     98985  246981521  100768022.0  cudaMalloc                  
+      1.0         49724911       7208      6898.6     7298.5      4775      69640       1945.9  cudaLaunchKernel            
+      0.6         29652133      14413      2057.3     2009.0      1603      13738        440.2  cudaStreamSynchronize       
+      0.3         14252611      14416       988.7      964.0       774      31024        415.4  cudaStreamIsCapturing_v10000
+      0.2         11967513         23    520326.7   239095.0    218555    3524270     723206.9  cuModuleLoadData            
+      0.1          3820691          2   1910345.5  1910345.5   1312136    2508555     845996.0  cudaHostAlloc               
+      0.0          2214341          9    246037.9    80608.0     70037     845504     312437.3  cuModuleUnload              
+      0.0           108022          1    108022.0   108022.0    108022     108022          0.0  cudaMemGetInfo              
+      0.0           106605        384       277.6      237.5       152        894        125.4  cuGetProcAddress            
+      0.0            27144          3      9048.0     8760.0      2824      15560       6372.9  cudaEventCreateWithFlags    
+      0.0            19029          3      6343.0     4998.0      3592      10439       3616.2  cudaEventRecord             
+      0.0            17641          5      3528.2     3946.0      1721       5681       1590.3  cudaEventQuery              
+      0.0            12385          2      6192.5     6192.5      2452       9933       5289.9  cudaEventDestroy            
+      0.0             2689          2      1344.5     1344.5       214       2475       1598.8  cuModuleGetLoadingMode      
+      0.0             2132          1      2132.0     2132.0      2132       2132          0.0  cuInit                      
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/gpukernsum.py]... 
+
+ ** CUDA GPU Kernel Summary (gpukernsum):
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)     GridXYZ         BlockXYZ                                                     Name                                                
+ --------  ---------------  ---------  --------  --------  --------  --------  -----------  --------------  --------------  ----------------------------------------------------------------------------------------------------
+     18.5         68400503      10807    6329.3    6272.0      5824     12736        207.1   512    1    1   512    1    1  cupy_scan_naive                                                                                     
+     17.2         63649804      10806    5890.2    5792.0      5184     14464        417.2  2048    1    1   128    1    1  cupy_add__float64_float64_float64                                                                   
+     12.6         46536528      10807    4306.1    4288.0      3744      7552        228.1   512    1    1   256    1    1  cupy_bsum_shfl                                                                                      
+     11.0         40793238      10807    3774.7    3712.0      3264      9408        198.4     1    1    1   512    1    1  cupy_scan_naive                                                                                     
+     10.5         38736027       7205    5376.3    5280.0      4800     12385        386.0  2048    1    1   128    1    1  cupy_getitem_mask                                                                                   
+      5.6         20633424       3602    5728.3    5568.0      5216      9473        416.2  2048    1    1   128    1    1  cupy_scatter_update_mask                                                                            
+      4.9         18272473       3602    5072.9    5056.0      4608      8224        185.1    28    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceKernel<cub::CU…
+      4.8         17922791       3602    4975.8    4928.0      4576      8032        131.2  2048    1    1   128    1    1  cupy_multiply__float_float64_float64                                                                
+      4.1         15217520       3602    4224.7    4128.0      3904      7328        287.6   433    1    1   128    1    1  cupy_subtract__float64_float64_float64                                                              
+      3.9         14457917       3602    4013.9    4000.0      3392      7200        182.3     1    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceSingleTileKern…
+      3.7         13595341       3602    3774.4    3744.0      3392      7233        171.8   433    1    1   128    1    1  cupy_absolute__float64_float64                                                                      
+      3.1         11505674       3602    3194.2    3136.0      2815      7104        329.6     1    1    1     1    1    1  cupy_less__float64_float_bool                                                                       
+      0.0            58657          1   58657.0   58657.0     58657     58657          0.0     1    1    1   512    1    1  cupy_var_core_float64                                                                               
+      0.0             9344          2    4672.0    4672.0      4640      4704         45.3    28    1    1   512    1    1  cupy_cub_sum_pass1                                                                                  
+      0.0             8992          2    4496.0    4496.0      4032      4960        656.2    28    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceKernel<cub::CU…
+      0.0             8384          2    4192.0    4192.0      3872      4512        452.5     1    1    1   512    1    1  cupy_cub_sum_pass2                                                                                  
+      0.0             7680          2    3840.0    3840.0      3776      3904         90.5     1    1    1     1    1    1  cupy_true_divide__float64_float_float64                                                             
+      0.0             7329          2    3664.5    3664.5      3328      4001        475.9     1    1    1   256    1    1  void cub::CUB_200200_350_370_500_520_600_610_700_750_800_860_890_900_NS::DeviceReduceSingleTileKern…
+      0.0             7232          2    3616.0    3616.0      3392      3840        316.8     1    1    1     1    1    1  cupy_true_divide__int64_int_float64                                                                 
+      0.0             6913          2    3456.5    3456.5      3136      3777        453.3     1    1    1     1    1    1  cupy_multiply__float64_float_float64                                                                
+      0.0             4672          1    4672.0    4672.0      4672      4672          0.0   433    1    1   128    1    1  cupy_less__float64_float_bool                                                                       
+      0.0             4384          1    4384.0    4384.0      4384      4384          0.0   433    1    1   128    1    1  cupy_greater__float64_float_bool                                                                    
+      0.0             3840          1    3840.0    3840.0      3840      3840          0.0     1    1    1     1    1    1  cupy_copy__float64_float64                                                                          
+      0.0             3648          1    3648.0    3648.0      3648      3648          0.0     1    1    1     1    1    1  cupy_sqrt__float64_float64                                                                          
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/gpumemtimesum.py]... 
+
+ ** GPU MemOps Summary (by Time) (gpumemtimesum):
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)      Operation     
+ --------  ---------------  -----  --------  --------  --------  --------  -----------  ------------------
+     99.1         24494950  14413    1699.5    1632.0      1247      6144        217.0  [CUDA memcpy DtoH]
+      0.9           226467      3   75489.0   25505.0     24448    176514      87491.8  [CUDA memcpy HtoD]
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/gpumemsizesum.py]... 
+
+ ** GPU MemOps Summary (by Size) (gpumemsizesum):
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)      Operation     
+ ----------  -----  --------  --------  --------  --------  -----------  ------------------
+      2.638      3     0.879     0.262     0.262     2.114        1.069  [CUDA memcpy HtoD]
+      0.047  14413     0.000     0.000     0.000     0.000        0.000  [CUDA memcpy DtoH]
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/openmpevtsum.py]... 
+SKIPPED: 10_cupy-upgraded-prof.sqlite does not contain OpenMP event data.
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/khrdebugsum.py]... 
+SKIPPED: 10_cupy-upgraded-prof.sqlite does not contain KHR Extension (KHR_DEBUG) data.
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/khrdebuggpusum.py]... 
+SKIPPED: 10_cupy-upgraded-prof.sqlite does not contain GPU KHR Extension (KHR_DEBUG) data.
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/vulkanmarkerssum.py]... 
+SKIPPED: 10_cupy-upgraded-prof.sqlite does not contain Vulkan Debug Extension (Vulkan Debug Util) data.
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/vulkangpumarkersum.py]... 
+SKIPPED: 10_cupy-upgraded-prof.sqlite does not contain GPU Vulkan Debug Extension (GPU Vulkan Debug markers) data.
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/dx11pixsum.py]... 
+SKIPPED: 10_cupy-upgraded-prof.sqlite does not contain DX11 CPU debug markers.
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/dx12gpumarkersum.py]... 
+SKIPPED: 10_cupy-upgraded-prof.sqlite does not contain DX12 GPU debug markers.
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/dx12pixsum.py]... 
+SKIPPED: 10_cupy-upgraded-prof.sqlite does not contain DX12 CPU debug markers.
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/wddmqueuesdetails.py]... 
+SKIPPED: 10_cupy-upgraded-prof.sqlite does not contain WDDM context data.
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/unifiedmemory.py]... 
+SKIPPED: 10_cupy-upgraded-prof.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/unifiedmemorytotals.py]... 
+SKIPPED: 10_cupy-upgraded-prof.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/umcpupagefaults.py]... 
+SKIPPED: 10_cupy-upgraded-prof.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [10_cupy-upgraded-prof.sqlite] with [/appl/cuda/11.8.0/nsight-systems-2022.4.2/host-linux-x64/reports/openaccsum.py]... 
+SKIPPED: 10_cupy-upgraded-prof.sqlite does not contain OpenACC event data.
