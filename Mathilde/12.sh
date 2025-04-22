@@ -1,8 +1,8 @@
 #!/bin/bash
 #BSUB -J all
-#BSUB -q c02613
+#BSUB -q gpua100
 #BSUB -W 03:00
-#BSUB -R "rusage[mem=2GB]"
+#BSUB -R "rusage[mem=24GB]"
 #BSUB -n 4
 #BSUB -R "span[hosts=1]"
 #BSUB -gpu "num=1:mode=exclusive_process"

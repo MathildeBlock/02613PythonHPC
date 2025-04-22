@@ -108,7 +108,7 @@ if __name__ == '__main__':
     # Save summary statistics to a CSV file
 
     stat_keys = ['mean_temp', 'std_temp', 'pct_above_18', 'pct_below_15']
-    output_file = 'summary_statistics.csv'
+    output_file = 'summary_statistics_a.csv'
 
     with open(output_file, mode='w', newline='') as csvfile:
         writer = csv.writer(csvfile)
